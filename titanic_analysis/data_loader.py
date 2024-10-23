@@ -10,10 +10,10 @@ def load_titanic_data(filepath):
     Returns:
         pd.DataFrame: Loaded Titanic dataset as a DataFrame.
     """
-    if filepath = "../../data/titanic.csv":
+    if filepath == "../../data/titanic.csv":
         df = {"name":["letter","num"],"dtype":["str","int"]}
         return pd.DataFrame(df)
     else:
-        df = pd.read_csv(filepath)
+        df = pd.read_csv(str(filepath))
         return df
     pass  # Implement the loading logic here
