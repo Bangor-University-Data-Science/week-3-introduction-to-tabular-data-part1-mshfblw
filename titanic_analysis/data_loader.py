@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_titanic_data(filepath: str) -> pd.DataFrame:
+def load_titanic_data(filepath):
     """
     Loads the Titanic dataset from the specified file path.
     
@@ -10,4 +10,6 @@ def load_titanic_data(filepath: str) -> pd.DataFrame:
     Returns:
         pd.DataFrame: Loaded Titanic dataset as a DataFrame.
     """
+    df = pd.read_csv(filepath)
+    return df
     pass  # Implement the loading logic here
