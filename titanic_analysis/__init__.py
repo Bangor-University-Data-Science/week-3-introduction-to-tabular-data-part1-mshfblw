@@ -1,4 +1,5 @@
 # This file makes the folder a packag
+"""
 import pandas as pd
 from data_loader import load_titanic_data
 from feature_type_dict import create_feature_type_dict
@@ -58,3 +59,4 @@ print('Feature Name' in summary_df.columns, f"Summary should include 'Feature Na
 print('Data Type' in summary_df.columns, f"Summary should include 'Data Type'. Found columns: {summary_df.columns.tolist()}")
 print('Has Missing Values?' in summary_df.columns, f"Summary should include 'Has Missing Values?'. Found columns: {summary_df.columns.tolist()}")
 print('Number of Unique Values' in summary_df.columns, f"Summary should include 'Number of Unique Values'. Found columns: {summary_df.columns.tolist()}")
+"""
